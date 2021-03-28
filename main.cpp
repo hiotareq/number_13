@@ -3,9 +3,8 @@
 #include <mutex>
 #include <condition_variable>
 #include <chrono>
-#include <unistd.h>
 
-std::mutex all_mutex, run;
+std::mutex all_mutex;
 
 std::condition_variable a_cond;
 std::condition_variable b_cond;
